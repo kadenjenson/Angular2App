@@ -22,4 +22,4 @@ var ProposalNewComponent = /** @class */ (function () {
     return ProposalNewComponent;
 }());
 exports.ProposalNewComponent = ProposalNewComponent;
-//# sourceMappingURL=proposal-new.components.js.map
+//# sourceMappingURL=proposal-new.component.js.map
