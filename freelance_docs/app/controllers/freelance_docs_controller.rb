@@ -3,7 +3,7 @@ class FreelanceDocsController < ApplicationController
 
   # GET /freelance_docs
   def index
-    @freelance_docs = FreelanceDoc.all
+    @freelance_docs = FreelanceDoc.order('created_at DESC')
 
     render json: @freelance_docs
   end
@@ -46,6 +46,6 @@ class FreelanceDocsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def freelance_doc_params
-      params.require(:freelance_doc).permit(:title, :desricption, :file_url, :image_url)
+      params.require(:freelance_doc).permit(:title, :description, :file_url, :image_url)
     end
 end
